@@ -5,11 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Аналоговые часы — 300px</title>
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/time.css">
 </head>
 <body>
     
-  
-
+    <div class="digital-wrap">
+        <div class="digital-clock" id="digitalClock" role="button" aria-label="Поточний час Києва">00:00:00</div>
+        <div class="digital-date" id="digitalDate">01.01.1970</div>
+        <div class="hint">Клікніть на годинник, щоб почути час українською</div>
+      </div>
+    
+        <script src="./js/watch.js"></script>
 </body>
 </html>

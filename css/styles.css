@@ -39,11 +39,25 @@ main {
     color: tomato;
     text-align: center;
     font-size: 50px;
+    
 }
-.time_watch {
-    display: flex;
+.schedule {
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+.time {
+
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(228, 164, 164);
+    /* display: flex;
     gap: 60px;
-    justify-content: center;
+    justify-content: center; */
 }
 /*===========================  time============ */
 
@@ -127,7 +141,7 @@ main {
 
   /*============= watch 2  ====== */
 
-  .bo{display:flex;align-items:center;justify-content:center;;margin:0;;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
+  /* .bo{display:flex;align-items:center;justify-content:center;;margin:0;;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
   .digital-wrap{display:flex;flex-direction:column;align-items:center;gap:8px}
   .digital-clock{
     width:300px;
@@ -149,4 +163,4 @@ main {
     font-weight:500;
     color:#333;
   }
-  .hint{font-size:13px;color:#555}
+  .hint{font-size:13px;color:#555} */
