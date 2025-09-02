@@ -219,7 +219,7 @@ main {
     padding-bottom: 30px;
   }
   .title {
-    font-size: 100px;
+    /* font-size: 100px; */
     font-weight: 600;
     font-style: italic;
     color: rosybrown;
@@ -231,13 +231,13 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 5px;
   }
   a {
     text-decoration: none;
   }
   .menu_list {
-    font-size: 50px;
+    /* font-size: 50px; */
     border: 2px solid red;
     padding: 10px;
     border-radius: 10px;
