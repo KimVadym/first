@@ -1,0 +1,11 @@
+header {
+    background-color: #92c1ed;
+}
+main {
+    background-color: #dbe04c;
+}
+.list {
+    color: tomato;
+    text-align: center;
+    font-size: 50px;
+}
