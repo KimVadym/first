@@ -169,3 +169,82 @@ main {
     color:#333;
   }
   .hint{font-size:13px;color:#555} */
+
+
+  .word-line {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 120px;
+    margin-bottom: 20px;
+  }
+  .fd {
+    width: 1200px;
+    background-color: rgb(197, 240, 96);
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .v {
+    background-color: rgb(74, 147, 248);
+  }
+  
+  /*      */
+  
+  .letter {
+    font-size: 350px; /* Увеличение размера букв в 3 раза */
+    display: inline-block;
+    transition: font-size 0.3s;
+  }
+  
+  .full-word {
+    font-size: 60px; /* Размер всего слова */
+  }
+  
+  .cv {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 220px;
+  }
+  
+  /* ==-=--==--== */
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  header {
+    background-color: #e9c1c1;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .title {
+    font-size: 100px;
+    font-weight: 600;
+    font-style: italic;
+    color: rosybrown;
+    display: flex;
+    justify-content: center;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .menu_list {
+    font-size: 50px;
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #58bd3f;
+  }
+  .sub_title {
+    font-size: 100px;
+    font-weight: 200;
+    color: rgb(154, 59, 140);
+  }
