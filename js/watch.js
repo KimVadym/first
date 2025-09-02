@@ -1,6 +1,3 @@
-
-
-
 const TIMEZONE = 'Europe/Kyiv';
 const clockEl = document.getElementById('digitalClock');
 const dateEl = document.getElementById('digitalDate');
@@ -9,12 +6,12 @@ const speakBtn = document.getElementById('speakBtn');
 function pad(n){ return n.toString().padStart(2,'0'); }
 
 function update(){
-  const now = new Date();
-  const formatter = new Intl.DateTimeFormat('uk-UA',{timeZone:TIMEZONE,hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
-  const parts = formatter.formatToParts(now);
-  const h = parts.find(p=>p.type==='hour').value;
-  const m = parts.find(p=>p.type==='minute').value;
-  const s = parts.find(p=>p.type==='second').value;
+  const now=new Date();
+  const formatter=new Intl.DateTimeFormat('uk-UA',{timeZone:TIMEZONE,hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false});
+  const parts=formatter.formatToParts(now);
+  const h=parts.find(p=>p.type==='hour').value;
+  const m=parts.find(p=>p.type==='minute').value;
+  const s=parts.find(p=>p.type==='second').value;
   clockEl.textContent=`${h}:${m}:${s}`;
   const dateFormatter=new Intl.DateTimeFormat('uk-UA',{timeZone:TIMEZONE,day:'2-digit',month:'2-digit',year:'numeric'});
   dateEl.textContent=dateFormatter.format(now);
@@ -40,10 +37,23 @@ function speakTime(){
   const secondsWord=(s%10===1 && s%100!==11)?'секунда':(s%10>=2 && s%10<=4 && (s%100<10 || s%100>=20))?'секунди':'секунд';
   const text=`Зараз ${h} ${hoursWord} ${m} ${minutesWord} ${s} ${secondsWord}.`;
   const u=new SpeechSynthesisUtterance(text);
+
+  // Выбираем украинский голос, если есть
+  const voices=speechSynthesis.getVoices();
+  const ukVoice=voices.find(v=>v.lang.startsWith('uk'));
+  if(ukVoice) u.voice=ukVoice;
   u.lang='uk-UA';
-  if(window.speechSynthesis.speaking){ window.speechSynthesis.cancel(); }
+
+  if(window.speechSynthesis.speaking) window.speechSynthesis.cancel();
   window.speechSynthesis.speak(u);
 }
 
-// Для Android лучше использовать явную кнопку
-speakBtn.addEventListener('click', speakTime);
+// Для Android и всех устройств: активируем после первого взаимодействия
+function enableSpeech(){
+  speakBtn.disabled=false;
+  speakBtn.addEventListener('click', speakTime);
+  speakBtn.removeEventListener('click', enableSpeech);
+}
+
+document.body.addEventListener('click', enableSpeech, {once:true});
+document.body.addEventListener('touchstart', enableSpeech, {once:true});
