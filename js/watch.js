@@ -53,3 +53,7 @@ function speakTime() {
 clockEl.addEventListener('click', speakTime);
 clockEl.addEventListener('keydown', (e)=>{ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); speakTime(); } });
 clockEl.setAttribute('tabindex','0');
+
+
+
+speechSynthesis.getVoices().forEach(v => console.log(v.name, v.lang));

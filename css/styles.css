@@ -49,6 +49,11 @@ main {
     padding-bottom: 20px;
     margin-top: 30px;
 }
+.time_box {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
 .time {
 
     border: 1px solid red;
