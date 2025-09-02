@@ -9,10 +9,35 @@
 <body>
     <header>
         <h1> 1-А</h1>
-        <h2 class="list">розклад</h2>
-
+        
     </header>
     <main>
+       <div class="container time_watch">
+        <section class="">
+            <div class="label">Киевское время (Europe/Kyiv)</div>
+            <div class="clock-wrap">
+              <div class="clock" id="clock">
+                <!-- стрелки -->
+                <div class="hand hour" id="hourHand"></div>
+                <div class="hand minute" id="minuteHand"></div>
+                <div class="hand second" id="secondHand"></div>
+                <div class="pivot"></div>
+              </div>
+              
+            </div>
+          
+        </section>
+        <section class=" bo"> 
+            <div class="digital-wrap">
+                <div class="digital-clock" id="digitalClock" role="button" aria-label="Поточний час Києва">00:00:00</div>
+                <div class="digital-date" id="digitalDate">01.01.1970</div>
+                <div class="hint">Клікніть на годинник, щоб почути час українською</div>
+              </div>
+            </section>
+       </div>
+       <section class="container">
+        <h2 class="list">розклад</h2>
+
         <h3>Понеділок</h3>
         <ol>
             <li><a href="">ЯДС</a></li>
@@ -52,7 +77,10 @@
             <li><a href="">Англ.мова</a></li>
             <li><a href="">Фіз.культ</a></li>
         </ol>
+       </section>
     </main>
     <footer></footer>
+    <script src="./js/time.js"></script>
+    <script src="./js/watch.js"></script>
 </body>
 </html>
