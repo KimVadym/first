@@ -1,3 +1,38 @@
+/* :root {
+    --main-color: #141414;
+    --text-white: #ffffff;
+    --main-text: #1e2827;
+  } */
+  a {
+    text-decoration: none;
+  }
+  h1,
+  h2,
+  h3,
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  body {
+    font-family: "Epilogue", sans-serif;
+    background: #fbfbfb;
+  }
+  .container {
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+
+
+
 header {
     background-color: #92c1ed;
 }
