@@ -284,5 +284,21 @@
   
   /* ==-=--==--== */
   
- 
+ .book {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 60px;
+    margin-bottom: 20px;
+   
+   
 
+.book_list {
+    font-size: 30px;
+    color: tomato;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 20px;}
+}
+.book_list:hover {
+    background-color: #58bd3f;
+  }
