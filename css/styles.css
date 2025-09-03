@@ -1,40 +1,122 @@
-
-  a {
-    text-decoration: none;
+:root {
+    --color-hover: #ff6c00;
+    --main-color: #ffffff;
+    --title-item: #9da4bd;
+    --color-text: #303030;
+    --title-text-item: #555555;
   }
+  body {
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--main-color);
+  }
+  /* nool */
   h1,
   h2,
   h3,
+  h4,
   p {
     margin-top: 0;
     margin-bottom: 0;
-    padding-left: 0;
   }
   ul {
-    list-style: none;
-    padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
   }
-  body {
-    font-family: "Epilogue", sans-serif;
-    background: #fbfbfb;
+  a {
+    text-decoration: none;
   }
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  
   .container {
-    max-width: 1200px;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+   
+    margin-left: auto;
+    margin-right: auto;
   }
-
-
-
-header {
-    background-color: #92c1ed;
-}
-main {
+   .math_sec{
     background-color: #dbe04c;
+   padding-bottom: 30px;
+   padding-top: 30px;
 }
+  header {
+    background-color: #6ccae4;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+  
+.menu {
+        
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  .math_list {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300px;
+    font-size: 150px;
+  }
+  /* ==================mobile============== */
+  @media screen and (max-width: 480px) {
+    .container {
+      width: 428px;
+    
+    }
+    .math_list {
+      
+        font-size: 50px;
+      }
+   
+
+  
+   
+    
+    
+     
+}
+.title {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    color: rosybrown;
+    margin-bottom: 20px;
+   
+  }
+.menu_list {
+   
+    border: 2px solid red;
+    
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #58bd3f;
+  }
+@media screen and (min-width: 768px) {
+    .container {
+      width: 720px;
+   
+    }
+   
+}  
+@media screen and (min-width: 1200px) {
+    .container {
+      width: 1200px;
+  
+    }}
+
+
+
+
 .list {
     color: tomato;
     text-align: center;
@@ -42,6 +124,7 @@ main {
     
 }
 .schedule {
+   
     font-size: 20px;
     line-height: 1.5;
     padding-left: 20px;
@@ -122,8 +205,13 @@ main {
     background: #d02626;
     z-index: 6;
   }
-  
+  .watch_list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
   .label {
+    text-align: center;
     font-size: 16px;
     color: #333;
     margin-bottom: 30px;
@@ -174,23 +262,16 @@ main {
   .word-line {
     text-transform: uppercase;
     font-weight: 300;
-    font-size: 120px;
+    font-size: 90px;
     margin-bottom: 20px;
   }
-  .fd {
-    width: 1200px;
-    background-color: rgb(197, 240, 96);
-    margin: 0 auto;
-    padding: 20px;
-  }
-  .v {
-    background-color: rgb(74, 147, 248);
-  }
+
+  
   
   /*      */
   
   .letter {
-    font-size: 350px; /* Увеличение размера букв в 3 раза */
+    font-size: 90px; /* Увеличение размера букв в 3 раза */
     display: inline-block;
     transition: font-size 0.3s;
   }
@@ -199,52 +280,9 @@ main {
     font-size: 60px; /* Размер всего слова */
   }
   
-  .cv {
-    text-transform: uppercase;
-    font-weight: 300;
-    font-size: 220px;
-  }
+
   
   /* ==-=--==--== */
-  .container {
-    width: 1200px;
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
   
-  header {
-    background-color: #e9c1c1;
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .title {
-    /* font-size: 100px; */
-    font-weight: 600;
-    font-style: italic;
-    color: rosybrown;
-    display: flex;
-    justify-content: center;
-  }
-  .menu {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-  }
-  a {
-    text-decoration: none;
-  }
-  .menu_list {
-    /* font-size: 50px; */
-    border: 2px solid red;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #58bd3f;
-  }
-  .sub_title {
-    font-size: 100px;
-    font-weight: 200;
-    color: rgb(154, 59, 140);
-  }
+ 
+
