@@ -302,3 +302,23 @@
 .book_list:hover {
     background-color: #58bd3f;
   }
+
+
+  /* yds */
+  .yds {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    color: rosybrown;
+    margin-bottom: 20px;
+    margin-top: 30px;
+  }
+
+  .yds_titel {
+    font-size: 30px;
+    color: tomato;
+    padding: 20px;
+    border: 2px solid red;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
