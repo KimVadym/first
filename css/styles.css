@@ -132,7 +132,24 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
+.shedule_item {
+    flex-basis: calc(100% /3 - 20px);
+    /* margin-right: 3px;
+    margin-bottom: 20px; */
+    text-align: left;
+    font-weight: 500;
+    color: #333;    
+    /* border: 1px solid #773bb9; */
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #92eaf1;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
 .time_box {
     text-align: center;
     margin-top: 60px;
@@ -323,3 +340,6 @@
     border-radius: 20px;
     margin-bottom: 20px;
   }
+
+
+
