@@ -1,4 +1,4 @@
-const TIMEZONE = 'Europe/Kyiv';
+// const TIMEZONE = 'Europe/Kyiv';
 const clockEl = document.getElementById('digitalClock');
 const dateEl = document.getElementById('digitalDate');
 const speakBtn = document.getElementById('speakBtn');
