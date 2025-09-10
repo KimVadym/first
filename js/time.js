@@ -6,7 +6,7 @@ const hourHand   = document.getElementById('hourHand');
 const minuteHand = document.getElementById('minuteHand');
 const secondHand = document.getElementById('secondHand');
 const clock      = document.getElementById('clock');
-
+ 
 // Рисуем цифры 1–12 и минутные подписи
 (function drawNumbers() {
   const center = { x: 150, y: 150 };

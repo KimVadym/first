@@ -252,30 +252,27 @@
 
   /*============= watch 2  ====== */
 
-  /* .bo{display:flex;align-items:center;justify-content:center;;margin:0;;font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial}
-  .digital-wrap{display:flex;flex-direction:column;align-items:center;gap:8px}
-  .digital-clock{
-    width:300px;
-    height:150px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#000;
-    color:#00ff88;
-    font-size:48px;
-    font-weight:700;
-    border-radius:12px;
-    box-shadow:0 6px 18px rgba(0,0,0,0.15);
-    user-select:none;
-    cursor:pointer;
-  }
-  .digital-date{
-    font-size:20px;
-    font-weight:500;
-    color:#333;
-  }
-  .hint{font-size:13px;color:#555} */
-
+.digital-clock{
+  width:300px;
+  height:150px;
+  /* display:flex; */
+  align-items:center;
+  justify-content:center;
+  background:#000;
+  color:#00ff88;
+  font-size:48px;
+  font-weight:700;
+  border-radius:12px;
+  box-shadow:0 6px 18px rgba(0,0,0,0.15);
+  user-select:none;
+  cursor:pointer;
+}
+.digital-date{
+  font-size:20px;
+  font-weight:500;
+  color:#333;
+}
+#speakBtn{padding:10px 20px;font-size:16px;border-radius:8px;cursor:pointer}
 
   .word-line {
     text-transform: uppercase;
@@ -363,23 +360,26 @@
 
 }
 
-/* modal============ */
-.dackdrop {
+ 
+
+
+  /* overlay */
+  .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #35253e;
+    background-color: #9b7aae;
     z-index: 100;
     transition: opacity 2000ms ease, visability 2000ms ease;
   }
-  .dackdrop.is-hidden {
+  .overlay.is-hidden {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
   }
-  .modal-window {
+  .modal {
     padding: 36px 40px;
     width: 538px;
     background: var(--hero);
@@ -389,7 +389,9 @@
     transform: translate(-50%, -50%);
     overflow-y: scroll;
     max-height: 80vh;
+    background-color: #fff;
   }
+  
   .modal-btn-close {
     position: absolute;
     top: 0;
@@ -405,3 +407,4 @@
     transform: scale(1.5);
     box-shadow: 0px 0px 8px -1px #5e3174;
   }
+
