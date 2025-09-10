@@ -381,7 +381,7 @@
   }
   .modal {
     padding: 36px 40px;
-    width: 538px;
+    /* width: 538px; */
     background: var(--hero);
     position: absolute;
     top: 50%;
@@ -390,7 +390,8 @@
     overflow-y: scroll;
     max-height: 80vh;
     background-color: #fff;
-    
+    align-items: center;
+
   }
   
   .modal-btn-close {
