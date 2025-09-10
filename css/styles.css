@@ -360,5 +360,48 @@
 .bell > li {
     margin-bottom: 10px;
     font-size: 20px;
-    font-weight:200px;
+
 }
+
+/* modal============ */
+.dackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #35253e;
+    z-index: 100;
+    transition: opacity 2000ms ease, visability 2000ms ease;
+  }
+  .dackdrop.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  .modal-window {
+    padding: 36px 40px;
+    width: 538px;
+    background: var(--hero);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: scroll;
+    max-height: 80vh;
+  }
+  .modal-btn-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    transition: transform 500ms linear;
+  }
+  .modal-btn-close:hover,
+  .modal-btn-close:focus {
+    transform: scale(1.5);
+    box-shadow: 0px 0px 8px -1px #5e3174;
+  }
