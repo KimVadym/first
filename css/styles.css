@@ -410,3 +410,28 @@
     box-shadow: 0px 0px 8px -1px #5e3174;
   }
 
+/* exampl */
+
+
+table {border-collapse: collapse; margin: 0 auto;}
+td, th {border: 1px solid #ddd; padding: 10px 15px;}
+th {background:#e2e8f0;}
+input {width:60px; padding:5px;}
+button {margin-top:15px; padding:8px 15px; cursor:pointer;}
+.correct {color:green; font-weight:bold;}
+.wrong {color:red; font-weight:bold;}
+
+.example {
+    background: rgb(237, 237, 104);
+    text-align: center;
+    font-weight: 300;
+   
+   padding-top: 20px;
+    
+  }
+  
+  .example__list {
+    padding-bottom: 20px;
+    color: #440328;
+   
+  }
