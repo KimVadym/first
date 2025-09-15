@@ -1,6 +1,6 @@
-const swiper = new Swiper ('.swiper', {
+const swiper = new Swiper ('.mySwiper', {
     // Optional parameters
-    direction: 'vertical',
+    // direction: 'vertical',
     loop: true,
   
     // If we need pagination
@@ -19,3 +19,13 @@ const swiper = new Swiper ('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+
+//   const swiper = new Swiper('.mySwiper', {
+//     loop: true,
+//     navigation: {
+//       nextEl: '.swiper-button-next',
+//       prevEl: '.swiper-button-prev',
+//     },
+//   });
+  
