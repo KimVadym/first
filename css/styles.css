@@ -435,3 +435,22 @@ button {margin-top:15px; padding:8px 15px; cursor:pointer;}
     color: #440328;
    
   }
+
+
+
+  /* photo and video */
+
+  .vid {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc(100% /3 - 20px);
+    gap: 5px;
+  }
+
+
+  /* swiper */
+  /* .swiper {
+    width: 600px;
+    height: 300px;
+  } */
